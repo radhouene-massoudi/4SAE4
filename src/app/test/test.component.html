@@ -1,0 +1,17 @@
+<p>test works!</p>
+<h1>4SAE4 is the best </h1>
+<input type="submit" value="msg" (click)="showMsg()">
+<div [style.backgroundColor]="C">{{C}}</div>
+<input type="text" [(ngModel)]="C">
+<input type="text" [(ngModel)]="searchByID">
+<div *ngFor="let p of listProdcut ">
+    <div *ngIf="p.id==searchByID || searchByID==0">
+{{p.id}}
+{{p.title}}
+{{p.quantity}}
+{{p.like}}
+{{p.price}}
+<a [routerLink]="['/detail/',p.title]">detail</a>
+<a routerLink="/detail/{{p.title}}">detail2</a>
+</div>
+</div>

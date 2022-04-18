@@ -1,0 +1,6 @@
+<p>products works!</p>
+<div *ngFor="let p of product">
+{{p.id}}
+{{p.title}}
+<a [routerLink]="['/del/',p.id]">delete</a>
+</div>
