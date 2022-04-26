@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ProductService } from '../service/product.service';
 import { TestService } from '../test.service';
 
 @Component({
@@ -9,12 +10,16 @@ import { TestService } from '../test.service';
 })
 export class DetailComponent implements OnInit {
 myid!:any;
-  constructor(private s:ActivatedRoute, private ser:TestService) { }
+product!:any;
+  constructor(private s:ActivatedRoute, private ser:ProductService) { }
 
   ngOnInit(): void {
 this.myid=this.s.snapshot.params['id'];//send request to backend select * from product where id=this.my id
-//console.log(this.myid);
-this.ser.msg();
+this.ser.getProductByID(this.myid).subscribe(
+  (d)=>{
+this.product=d;
+  }
+);
   }
   
 }

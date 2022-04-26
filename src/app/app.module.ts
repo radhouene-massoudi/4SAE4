@@ -16,6 +16,10 @@ import { DetailComponent } from './detail/detail.component';
 import { ProductsComponent } from './products/products.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DeleteproductComponent } from './deleteproduct/deleteproduct.component';
+import { UpdateproductComponent } from './updateproduct/updateproduct.component';
+import { TvComponent } from './tv/tv.component';
+import { MobileComponent } from './mobile/mobile.component';
+import { ShowoneproductComponent } from './showoneproduct/showoneproduct.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,11 @@ import { DeleteproductComponent } from './deleteproduct/deleteproduct.component'
     LoginComponent,
     DetailComponent,
     ProductsComponent,
-    DeleteproductComponent
+    DeleteproductComponent,
+    UpdateproductComponent,
+    TvComponent,
+    MobileComponent,
+    ShowoneproductComponent
   ],
   imports: [
     BrowserModule,

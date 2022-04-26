@@ -1,0 +1,11 @@
+<p>showoneproduct works!</p>
+<div *ngIf="prixmax>p.price || prixmax==0">
+{{p.id}}
+{{p.price}}
+{{p.title}}
+{{p.quantity}}
+{{p.like}}
+<input type="submit" value="like" (click)="sendDataToParent(p)">
+<input type="submit" value="buy" >
+
+</div>

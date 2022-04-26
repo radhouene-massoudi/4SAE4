@@ -1,9 +1,18 @@
 {
   "product": [
     {
-      "id": 1,
-      "title": "P1",
-      "author": "typicode"
+      "title": "esprit",
+      "price": "esprit",
+      "quantity": "esprit",
+      "like": 555555,
+      "id": 1
+    },
+    {
+      "title": "fsdfds",
+      "price": "sddfsd",
+      "quantity": "df",
+      "like": 3,
+      "id": 2
     }
   ]
 }

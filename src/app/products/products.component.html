@@ -2,5 +2,8 @@
 <div *ngFor="let p of product">
 {{p.id}}
 {{p.title}}
-<a [routerLink]="['/del/',p.id]">delete</a>
+<a [routerLink]="['/del/',p.id]">delete</a>||||
+<a [routerLink]="['/detail/',p.id]">detail</a>||||
+<a [routerLink]="['/update/',p.id]">update</a>
+
 </div>
