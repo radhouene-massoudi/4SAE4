@@ -20,4 +20,8 @@ export class MobileComponent implements OnInit {
     this.listProdcuttv[index].like++;
 
   }
+  desQ(e:any){
+    let index=this.listProdcuttv.indexOf(e);
+    this.listProdcuttv[index].quantity--;
+  }
 }

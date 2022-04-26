@@ -1,4 +1,5 @@
 <p>mobile works!</p>
 <div *ngFor="let t of listProdcuttv">
-    <app-showoneproduct [p]="t" [prixmax]="35" (notif)="afterrcvData($event)"></app-showoneproduct>
+    <app-showoneproduct [p]="t" [prixmax]="35" (notif)="afterrcvData($event)" 
+    (Q)="desQ($event)"></app-showoneproduct>
     </div>

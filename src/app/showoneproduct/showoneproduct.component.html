@@ -6,6 +6,6 @@
 {{p.quantity}}
 {{p.like}}
 <input type="submit" value="like" (click)="sendDataToParent(p)">
-<input type="submit" value="buy" >
+<input type="submit" value="buy" (click)="decreaseQuantity(p)">
 
 </div>

@@ -9,11 +9,15 @@ export class ShowoneproductComponent implements OnInit {
 @Input()p!:any;
 @Input()prixmax=0;
 @Output() notif=new EventEmitter();
-  constructor() { }
+@Output()Q=new EventEmitter() 
+constructor() { }
 
   ngOnInit(): void {
   }
 sendDataToParent(p:any){
 this.notif.emit(p)
+}
+decreaseQuantity(p:any){
+this.Q.emit(p)
 }
 }
